@@ -2,7 +2,7 @@ package com.csculb.atm;
 
 public class User {
 
-    private final String name;
+    private String name;
     private final Atm atm;
 
     public User(String name, Atm atm) {
@@ -18,5 +18,9 @@ public class User {
     void withdraw(double amount) {
         System.out.println(name + " is withdrawing " + amount + "MMK");
         atm.withdraw(amount);
+    }
+
+    public String getName() {
+        return name;
     }
 }

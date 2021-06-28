@@ -7,13 +7,16 @@ public class Atm {
     // current money
     double currentMoney;
 
+    final String username;
+
     // capacity
     double maxAmount = 1_000_000.0;
     // max_transition_amount
     double maxTransitionAmount = 100_000.0;
 
-    public Atm(String name, double depositAmount) {
+    public Atm(String name, double depositAmount, String username) {
         this.name = name;
+        this.username = username;
 
         if (depositAmount > maxAmount) {
             this.currentMoney = maxAmount;
@@ -22,7 +25,7 @@ public class Atm {
         }
 
         System.out.println("Welcome from " + name);
-        System.out.println("Your account have " + depositAmount + "MMK.");
+        System.out.println(username + "'s account have " + depositAmount + "MMK.");
     }
 
     // deposit()
