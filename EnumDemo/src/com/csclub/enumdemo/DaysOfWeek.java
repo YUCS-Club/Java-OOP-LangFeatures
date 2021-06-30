@@ -3,7 +3,7 @@ package com.csclub.enumdemo;
 public enum DaysOfWeek {
 
     // Constants
-    SUN,
+    SUN("Sunday"),
     MON("Monday"),
     TUE("Tuesday", "Tyr's day"),
     WED("Wednesday", "Day of the Woden"),
@@ -12,12 +12,11 @@ public enum DaysOfWeek {
     SAT;
 
     // States or variables
-    String fullName;
-    String meaning;
-    String detailInfo;
+    private String fullName;
+    private String meaning;
+    private String detailInfo;
 
     // Constructors
-
     DaysOfWeek() {
     }
 
