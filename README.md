@@ -20,3 +20,8 @@ Object ဆောက်ပုံဆောက်နည်း, Constructor အက�
   <summary>EnumDemo</summary>
   Enum slide အတွက် source code ဖြစ်ပါတယ်။
 </details>
+
+<details>
+  <summary>Day 04</summary>
+  ဒီနေ့တော့ inheritance နဲ့ abstraction အကြောင်းကို ပြောဖြစ်ခဲ့ပါတယ်။
+</details>
